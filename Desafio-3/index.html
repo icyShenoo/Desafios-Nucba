@@ -11,6 +11,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Mi perfil</title>
   </head>
@@ -49,85 +53,94 @@
       <form class="formulario">
         <label for="nombre">Nombre:</label>
         <input
+          class="barr"
           type="text"
           id="nombre"
           placeholder="Ingrese su Nombre"
-        /><br /><br />
+        />
 
         <label for="apellido">Apellido:</label>
         <input
+          class="barr"
           type="text"
           id="apellido"
           placeholder="Ingrese su apellido"
-        /><br /><br />
+        />
 
         <label for="email">Email:</label>
         <input
+          class="barr"
           type="email"
           id="email"
           placeholder="Ingrese su Email"
-        /><br /><br />
+        />
 
         <label for="remail">Nuevamente su Email:</label>
         <input
+          class="barr"
           type="email"
           id="remail"
           placeholder="Email nuevamente"
-        /><br /><br />
+        />
 
         <label for="dni">Documento:</label>
         <input
+          class="barr"
           type="number"
           id="dni"
           placeholder="Ingrese su Documento"
-        /><br /><br />
+        />
 
         <label for="tel">Telefono:</label>
         <input
+          class="barr"
           type="number"
           id="tel"
           placeholder="Ingrese su Telefono"
-        /><br /><br />
+        />
 
         <label for="user">Nombre de usuario:</label>
         <input
+          class="barr"
           type="text"
           id="user"
           placeholder="Ingrese su Usuario"
-        /><br /><br />
+        />
 
         <label for="pass">Contraseña:</label>
         <input
+          class="barr"
           type="password"
           id="pass"
           placeholder="Ingrese su Contraseña"
-        /><br /><br />
+        />
 
         <label for="prov">Provincia:</label>
-        <select name="pais" id="pais">
+        <select class="barr" name="pais" id="pais">
           <option value="cba">Buenos Aires</option>
           <option value="men">Mendoza</option>
           <option value="ro">Rosario</option>
           <option value="chu">Chubut</option>
           <option value="cor">Cordoba</option>
-          <option value="sl">San Luis</option></select
-        ><br /><br />
+          <option value="sl">San Luis</option>
+        </select>
+        <div class="container-goku">
+          <label for="win">Quien gana?:</label>
+          <input class="barr" type="radio" name="win" id="naruto" />
+          <label for="naruto">Naruto</label>
 
-        <label for="win">Quien gana?:</label><br /><br />
+          <input class="barr" type="radio" name="win" id="goku" />
+          <label for="goku">Goku</label>
 
-        <input type="radio" name="win" id="naruto" />
-        <label for="naruto">Naruto</label>
+          <input class="barr" type="radio" name="win" id="luffy" />
+          <label for="luffy">Luffy</label>
+        </div>
+        <div class="container-acep">
+          <label for="acep">Acepto los Terminos y condiciones</label>
+          <input class="barr" type="checkbox" id="acep" name="acep" />
+        </div>
 
-        <input type="radio" name="win" id="goku" />
-        <label for="goku">Goku</label>
-
-        <input type="radio" name="win" id="luffy" />
-        <label for="luffy">Luffy</label><br /><br />
-
-        <label for="acep">Acepto los Terminos y condiciones</label>
-        <input type="checkbox" id="acep" name="acep" /><br /><br />
-
-        <button>Enviar</button>
+        <button class="barr">Enviar</button>
       </form>
     </div>
   </body>
